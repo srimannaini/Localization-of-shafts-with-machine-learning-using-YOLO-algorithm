@@ -1,0 +1,35 @@
+{
+    "model" : {
+        "input_width":          256,
+        "input_height":         256,
+		"num_channels":           1,
+        "labels":               ["0"]
+    },
+
+  "train": {
+    "train_image_folder": "D:\\CNN SRIMAN\\report\\sriman20\\Likith_1000\\train\\",
+    "train_annot_folder": "D:\\CNN SRIMAN\\report\\sriman20\\Likith_1000\\train\\",
+
+    "pretrained_weights": "transparent.h5",
+    "batch_size": 16,
+    "learning_rate": 1e-2,
+    "nb_epochs": 100,
+    "warmup_epochs": 3,
+
+    "object_scale": 5.0,
+    "no_object_scale": 1.0,
+    "coord_scale": 1.0,
+    "class_scale": 1.0,
+    "direction_scale" : 10.0,
+
+    "saved_weights_name": "transparent.h5",
+    "debug": true,
+    "train_times": 10
+  },
+
+    "valid": {
+        "valid_image_folder":   "D:\\CNN SRIMAN\\report\\sriman20\\Likith_1000\\valid\\",
+        "valid_annot_folder":   "D:\\CNN SRIMAN\\report\\sriman20\\Likith_1000\\valid\\",
+        "valid_times": 1
+    }
+}
